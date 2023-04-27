@@ -23,6 +23,8 @@ class demom extends StatelessWidget {
           Dislplaydata('../images/Thanks.jpg',context),
 
           Dislplaydata('../images/win.jpg',context),
+         
+         Dislplaydata('../images/mug.jpg', context),
 
          /* Container(
             // child: Stack(
@@ -38,25 +40,7 @@ class demom extends StatelessWidget {
               image: DecorationImage(image: AssetImage('images/Thanks.jpg'),fit: BoxFit.cover),
               color: Colors.amber[100],
             ),
-          ),
-*/
-         /* Container(
-            margin: EdgeInsets.all(20.0),
-            constraints: BoxConstraints.expand(width: double.infinity,height: 100.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(25.0)),
-              image: DecorationImage(image: AssetImage('images/win.jpg'),fit: BoxFit.cover),
-            ),
           ),*/
-
-      /*    Container(
-            margin: EdgeInsets.all(20.0),
-            constraints: BoxConstraints.expand(width: double.infinity,height: 100.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(25.0)),
-              image: DecorationImage(image: AssetImage('images/01.jpg'),fit: BoxFit.cover),
-            ),
-          )*/
         ],
       ),
     );
@@ -64,23 +48,21 @@ class demom extends StatelessWidget {
 
   Widget Dislplaydata(String url,BuildContext context){
     return GestureDetector(
-
       onTap: (){
         Navigator.push(context, MaterialPageRoute(builder: (context){
           return demoDm() ;
         }));
       },
-
       child: Container(
-        margin: const EdgeInsets.all(20.0),
-        // alignment: Alignment.center,
+           margin: const EdgeInsets.all(20.0),
+          // alignment: Alignment.center,
 
-        constraints: const BoxConstraints.expand(width: double.infinity,height: 100.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(25.0)),
-          image: DecorationImage(image: AssetImage(url),fit: BoxFit.cover),
-          color: Colors.brown,
-        ),
+          constraints: const BoxConstraints.expand(width: double.infinity,height: 100.0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(25.0)),
+            image: DecorationImage(image: AssetImage(url),fit: BoxFit.cover),
+            color: Colors.brown,
+          ),
         ),
     );
 
