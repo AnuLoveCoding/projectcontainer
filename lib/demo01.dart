@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:projectcontainer/demo.dart';
 
@@ -24,7 +22,7 @@ class demom extends StatelessWidget {
 
           Dislplaydata('../images/win.jpg',context),
          
-         Dislplaydata('../images/mug.jpg', context),
+          Dislplaydata('../images/mug.jpg', context),
 
          /* Container(
             // child: Stack(
@@ -41,6 +39,7 @@ class demom extends StatelessWidget {
               color: Colors.amber[100],
             ),
           ),*/
+
         ],
       ),
     );
@@ -65,7 +64,5 @@ class demom extends StatelessWidget {
           ),
         ),
     );
-
-
   }
 }
