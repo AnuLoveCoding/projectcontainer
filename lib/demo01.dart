@@ -22,7 +22,7 @@ class demom extends StatelessWidget {
 
           Dislplaydata('../images/win.jpg',context),
          
-          Dislplaydata('../images/mug.jpg', context),
+          Dislplaydata('../images/mu g.jpg', context),
 
          /* Container(
             // child: Stack(
@@ -64,5 +64,6 @@ class demom extends StatelessWidget {
           ),
         ),
     );
+
   }
 }
