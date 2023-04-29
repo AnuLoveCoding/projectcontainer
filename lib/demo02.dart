@@ -37,10 +37,25 @@ class demoo extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(25.0)),
               image: DecorationImage(image:  AssetImage('../images/Tree.jpg'),fit: BoxFit.cover,),
+              color: Colors.black12,
             ),
 
           ),
+
+          DisplayData('../images/mug.jpg', context),
         ],
+      ),
+    );
+  }
+
+  Widget DisplayData(String url, BuildContext context){
+    return Container(
+      margin: EdgeInsets.all(20.0),
+      constraints: BoxConstraints.expand(width: double.infinity, height: 100.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(25.0)),
+        image: DecorationImage(image: AssetImage(url),fit:  BoxFit.cover),
+        color: Colors.greenAccent,
       ),
     );
   }
